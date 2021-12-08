@@ -68,14 +68,14 @@
      <string>File</string>
     </property>
     <addaction name="actionOpen"/>
+    <addaction name="actionLogin"/>
     <addaction name="actionQuit"/>
    </widget>
    <widget class="QMenu" name="menuHelp">
     <property name="title">
      <string>Help</string>
     </property>
-    <addaction name="actionAbnout"/>
-    <addaction name="actionAbout_Qt"/>
+    <addaction name="actionAbout"/>
    </widget>
    <addaction name="menuFile"/>
    <addaction name="menuHelp"/>
@@ -91,7 +91,7 @@
     <string>Quit</string>
    </property>
   </action>
-  <action name="actionAbout_Qt">
+  <action name="actionAbout">
    <property name="text">
     <string>About Qt</string>
    </property>
@@ -99,6 +99,11 @@
   <action name="actionAbnout">
    <property name="text">
     <string>About</string>
+   </property>
+  </action>
+  <action name="actionLogin">
+   <property name="text">
+    <string>Login</string>
    </property>
   </action>
  </widget>
