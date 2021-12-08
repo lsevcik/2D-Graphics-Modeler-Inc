@@ -30,8 +30,4 @@ protected:
     QPainter *painter;
 };
 
-class Text: public Shape {
-
-};
-
 #endif // MAINWINDOW_H
