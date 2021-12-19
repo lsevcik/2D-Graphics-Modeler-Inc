@@ -1,0 +1,20 @@
+ShapeId: 1
+ShapeType: Text
+ShapeDimensions: 250, 425, 500, 50
+TextString: It works!
+TextColor: blue
+TextAlignment: AlignCenter
+TextPointSize: 25
+TextFontFamily: Comic Sans MS
+TextFontStyle: StyleItalic
+TextFontWeight: Normal
+ShapeId: 1
+ShapeType: Text
+ShapeDimensions: 250, 425, 500, 50
+TextString: ... kind of
+TextColor: blue
+TextAlignment: AlignBottom AlignRight
+TextPointSize: 15
+TextFontFamily: Comic Sans MS
+TextFontStyle: StyleOblique
+TextFontWeight: Light
