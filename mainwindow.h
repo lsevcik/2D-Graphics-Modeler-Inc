@@ -12,7 +12,7 @@
 class Widget : public QWidget
 {
 public:
-    Widget(QWidget *obj = 0);
+    Widget(QWidget *parent = nullptr);
     void paintEvent(QPaintEvent *);
 private:
     QLabel* buildText(QTextStream &in);
@@ -43,7 +43,8 @@ private slots:
 private:
     Ui::MainWindow *ui;
     loginDialog *m_loginDialog;
-    Widget wgt5;
+    Widget *wgt5;
 };
 
 #endif // MAINWINDOW_H
+

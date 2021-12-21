@@ -6,8 +6,10 @@ MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
     ,  m_loginDialog(new loginDialog(this))
+    , wgt5(new Widget((QWidget*)this))
 {
     ui->setupUi(this);
+    ui->target->addWidget(wgt5);
 }
 
 MainWindow::~MainWindow()
@@ -39,6 +41,4 @@ void MainWindow::on_actionAbout_triggered()
 
 void MainWindow::on_actionOpen_triggered()
 {
-    wgt5.resize(1000, 1000);
-    wgt5.show();
 }
