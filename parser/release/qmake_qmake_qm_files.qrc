@@ -1,0 +1,5 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource prefix="i18n">
+<file alias="parser_en_US.qm">D:/QtProjects/parser/release/parser_en_US.qm</file>
+</qresource>
+</RCC>
