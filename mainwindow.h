@@ -6,6 +6,8 @@
 #include <QMainWindow>
 #include <QtDebug>
 #include <QMessageBox>
+#include <QGridLayout>
+#include <QPainter>
 #include<iostream>
 #include "loginDialog.h"
 
@@ -17,6 +19,8 @@ public:
 private:
     QLabel* buildText(QTextStream &in);
     QLabel* buildShape(QTextStream &in);
+    QGridLayout* layout;
+    QPainter painter;
 };
 
 QT_BEGIN_NAMESPACE

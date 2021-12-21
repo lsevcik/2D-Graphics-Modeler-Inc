@@ -10,14 +10,15 @@
 //Default constructor for Widget.
 Widget::Widget(QWidget *obj)
     : QWidget(obj)
+    , layout(new QGridLayout((QWidget*)this))
 {
-
 }
 
 //Run when the user decides to load a file.
 void Widget::paintEvent(QPaintEvent *)
 {
     QPainter painter(this);
+    painter.setPen(QPen());
 
     //"loads" shapes file from build file.
     QFile file("shapes.txt");
@@ -50,30 +51,37 @@ void Widget::paintEvent(QPaintEvent *)
         }
         else if(type == "Line") //If the shapes file is making a line.
         {
-
+            auto pen = QPen();
+            painter.setPen(pen);
         }
         else if(type == "Polyline") //If the shapes file is making a polyline.
         {
-
+            auto pen = QPen();
+            painter.setPen(pen);
         }
         else if(type == "Polygon") //If the shapes file is making a polygon.
         {
+            painter.drawRect(QRectF(10, 20, 80, 60));
 
         }
         else if(type == "Rectangle") //If the shapes file is making a rectangle.
         {
+            painter.drawRect(QRectF(10, 20, 80, 60));
 
         }
         else if(type == "Square") //If the shapes file is making a square.
         {
+            painter.drawRect(QRectF(10, 20, 80, 60));
 
         }
         else if(type == "Ellipse") //If the shapes file is making a ellipse.
         {
+            painter.drawRect(QRectF(10, 20, 80, 60));
 
         }
         else if(type == "Circle") //If the shapes file is making a circle.
         {
+            painter.drawRect(QRectF(10, 20, 80, 60));
 
         }
         else
