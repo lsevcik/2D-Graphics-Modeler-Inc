@@ -200,43 +200,43 @@ QLabel* Widget::buildText(QTextStream &in)
 
     //Handles the thickness of the letters. "TextFontWeight".
     currentLine = (in.readLine()).split(' ')[1];
-    int weight = 50;
+    QFont::Weight weight;
 
     if(currentLine == "Thin")
     {
-        weight = 0;
+        weight = QFont::Thin;
     }
     else if(currentLine == "ExtraLight")
     {
-        weight = 12;
+        weight = QFont::ExtraLight;
     }
     else if(currentLine == "Light")
     {
-        weight = 25;
+        weight = QFont::Light;
     }
     else if(currentLine == "Normal")
     {
-        weight = 50;
+        weight = QFont::Normal;
     }
     else if(currentLine == "Medium")
     {
-        weight = 57;
+        weight = QFont::Medium;
     }
     else if(currentLine == "DemiBold")
     {
-        weight = 63;
+        weight = QFont::DemiBold;
     }
     else if(currentLine == "Bold")
     {
-        weight = 75;
+        weight = QFont::Bold;
     }
     else if(currentLine == "ExtraBold")
     {
-        weight = 81;
+        weight = QFont::ExtraBold;
     }
     else if(currentLine == "Black")
     {
-        weight = 87;
+        weight = QFont::Black;
     }
 
     //Creates a QFont object with the appropriate font, size, style, and weight using what was already read.
